@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de fundo</title>
+    <style>
+        
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#exemplo-1 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/The_Triumph_of_St._Ignatius.jpg/500px-The_Triumph_of_St._Ignatius.jpg");
+  /* Caso eu queira referenciar uma imagem local,
+  que está em uma pasta "imagens" do meu projeto,
+  eu escreveria o caminho como a seguir: */
+  /* background-image: url("imagens/gato.png"); */
+}
+
+#exemplo-2 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Edouard_Manet_-_At_the_Caf%C3%A9_-_Google_Art_Project.jpg/500px-Edouard_Manet_-_At_the_Caf%C3%A9_-_Google_Art_Project.jpg");
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+}
+
+#exemplo-3 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Coin_of_Kazakhstan_0229.png?20141124115535.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 200px;
+}
+
+#exemplo-4 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Coin_of_Kazakhstan_0229.png?20141124115535.png");
+  background-repeat: repeat-y;
+  width: 100%;
+  height: 200px;
+}
+
+#exemplo-5 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Coin_of_Kazakhstan_0229.png?20141124115535.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+}
+
+#exemplo-6 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Coin_of_Kazakhstan_0229.png?20141124115535.png");
+  background-repeat: space;
+  width: 100%;
+  height: 200px;
+}
+
+#exemplo-7 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Coin_of_Kazakhstan_0229.png?20141124115535.png");
+  background-repeat: space;
+  width: 100%;
+  height: 200px;
+}
+
+#exemplo-8 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dead_Child_by_Portinari.jpg/640px-Dead_Child_by_Portinari.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+#exemplo-9 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dead_Child_by_Portinari.jpg/640px-Dead_Child_by_Portinari.jpg");
+  background-position: right;
+  width: 100%;
+  height: 500px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Background Images</h1>
+    </header>
+<main>
+  <h1>Background Images</h1>
+
+  <h2>Background</h2>
+  <p>Utilizando a propriedade <code>background-image</code>, podemos definir a imagem de fundo de um container.
+
+  <div id="exemplo-1">
+    Vivamus lacinia lacus vel neque egestas, vitae volutpat purus dapibus. Nullam nec ultricies erat. Etiam ac urna metus. Sed cursus libero id ullamcorper interdum. Donec non urna et erat vehicula porttitor. Vivamus a sagittis dolor.
+  </div>
+  <small>Imagem de fundo definida em uma div com um texto de marcação (Lorem Ipsum).</small>
+
+  <hr>
+
+  <h2>Background Size</h2>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-size">https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-size</a>
+  <p>Utilizando a propriedade <code>background-size</code>, podemos definir como a imagem irá se comportar no container. Veja todas as opções possívels de valores para essa propriedade na documentação da MDN.</p>
+
+  <div id="exemplo-2">
+  </div>
+  <small>Imagem de fundo definida em uma div com um texto de marcação (Lorem Ipsum).</small>
+
+  <hr>
+
+  <h2>Background Repeat</h2>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat">https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat</a>
+  <p>Utilizando a propriedade <code>background-repeat</code>, podemos definir como a imagem de fundo irá se repetir, horizontalmente e verticalmente. Veja todas as opções possívels de valores para essa propriedade na documentação da MDN.</p>
+
+  <ul>
+    <li><code>no-repeat</code>: A imagem não se repete no container;</li>
+    <li><code>repeat-x</code>: A imagem se repete horizontalmente (no eixo x);</li>
+    <li><code>repeat-y</code>: A imagem se repete verticalmente (no eixo y);</li>
+  </ul>
+
+  <h3>Repetindo horizontalmente (repeat-x)</h3>
+  <div id="exemplo-3">
+  </div>
+
+  <h3>Repetindo verticalmente (repeat-y)</h3>
+  <div id="exemplo-4">
+  </div>
+
+  <h3>Sem repetição (no-repeat)</h3>
+  <div id="exemplo-5">
+  </div>
+
+  <h3>Espaçado (space)</h3>
+  <p>Repete a imagem quantas vezes for possível dentro do espaço disponível no container</p>
+  <div id="exemplo-6">
+  </div>
+
+  <h3>Espaçado (round)</h3>
+  <p>Repete a imagem quantas vezes for possível porém podendo distorcê-la para se encaixar melhor, diferente de <code>space</code></p>
+  <div id="exemplo-7">
+  </div>
+  
+  <hr>
+  
+  <h2>Background Position</h2>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position">https://developer.mozilla.org/en-US/docs/Web/CSS/background-position</a>
+  <p>Utilizando a propriedade <code>background-position</code>, podemos definir a posição inicial das imagens de fundo. Veja todas as opções possívels de valores para essa propriedade na documentação da MDN.</p>
+  
+  <h3>Centralizada</h3>
+  <p><code>background-position: center;</code></p>
+  <div id="exemplo-8">
+  </div>
+  
+  <h3>Alinhada à direita</h3>
+  <p><code>background-position: right;</code></p>
+  <div id="exemplo-9">
+  </div>
+  
+</main>
+    <footer>
+    </footer>
+</body>
+</html>
