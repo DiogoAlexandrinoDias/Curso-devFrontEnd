@@ -1,0 +1,54 @@
+body {
+  background: rgb(51, 152, 235);
+  font-family: sans-serif;
+}
+
+img {
+  width: 32px;
+}
+
+header {
+  background: #e4cb9533;
+  text-align: center;
+  padding: 2em;
+}
+
+code {
+  background: #e4cb9533;
+  padding: .3em 0.5em;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+main {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.top-icon {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid #000;
+  padding: 5px;
+  transition-property: transform;
+  transition-duration: 3s;
+}
+
+.top-icon:hover {
+  background: rgba(0,0,0,0.4);
+  transform: scale(1.2);
+  transition-property: transform, background;
+  transition-duration: 1s, 2s;
+}
+
+.article-data {
+  height: 100px;
+  background: #012941;
+  position: sticky;
+  top: 100px;
+  margin-top: 20px;
+}
