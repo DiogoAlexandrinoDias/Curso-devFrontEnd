@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(90deg, rgba(81, 11, 114, 0.822), #01023a, rgb(93, 11, 114));
+
+}
+
+header {
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 30px;
+    background-color: #e0e0f55d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+#container {
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 30px;
+    background-color: #e0e0f55d;
+    display: grid;
+    grid-template-rows: 20 20px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+nav ul {
+  list-style: none; /* Remove as bolinhas da lista */
+  padding: 0;
+  margin: 0;
+
+}
+
+nav li {
+  display: inline-block; /* Faz os itens da lista ficarem lado a lado */
+}
+
+nav a {
+  display: block; /* Faz o link ocupar toda a área do li */
+  padding: 10px;
+  text-decoration: none; /* Remove o sublinhado padrão */
+  color: #ffffff; /* Cor padrão do texto */
+}
+
+nav a:hover {
+  background-color: #dddddd28; /* Cor de fundo ao passar o mouse */
+  color: #000; /* Cor do texto ao passar o mouse */
+}
