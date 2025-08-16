@@ -1,50 +1,62 @@
+*{
+  color: white;
+
+}
 body {
     background: linear-gradient(90deg, rgba(81, 11, 114, 0.822), #01023a, rgb(93, 11, 114));
-
 }
 
 header {
     width: 100%;
-    padding: 1.5rem;
     margin-bottom: 30px;
     background-color: #e0e0f55d;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border: 2px solid #000000;
     border-radius: 8px;
-}
-#container {
-    width: 100%;
-    padding: 1.5rem;
-    margin-bottom: 30px;
-    background-color: #e0e0f55d;
-    display: grid;
-    grid-template-rows: 20 20px;
-    border: 2px solid #000000;
-    border-radius: 8px;
-    color: #ffffff;
+    
 }
 
+#logoapenasumshow{
+  padding-left: 45%;
+  padding-left: 45%;
+  height: 100px;
+  
+}
 nav ul {
+  display: flex;
+  justify-content: space-around;
   list-style: none; /* Remove as bolinhas da lista */
-  padding: 0;
-  margin: 0;
-
+  padding-top: 0%;
+  margin: 0%;
+  top: 0%;
+  background-color: #4f40791a;
 }
 
 nav li {
-  display: inline-block; /* Faz os itens da lista ficarem lado a lado */
+  background-color: #4f40791a;
+  display: inline-block;
 }
 
 nav a {
   display: block; /* Faz o link ocupar toda a área do li */
   padding: 10px;
   text-decoration: none; /* Remove o sublinhado padrão */
-  color: #ffffff; /* Cor padrão do texto */
 }
 
 nav a:hover {
-  background-color: #dddddd28; /* Cor de fundo ao passar o mouse */
+  background-color: #dddddd42; /* Cor de fundo ao passar o mouse */
   color: #000; /* Cor do texto ao passar o mouse */
+}
+
+.conteudo {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    background-color: #e0e0f55d;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+.quadrado{
+  display: flex
+  background-color: #e0e0f55d;
 }
