@@ -14,18 +14,18 @@ header {
     background-color: #e0e0f55d;
     border: 2px solid #000000;
     border-radius: 8px;
-    
+    justify-content: center;
 }
 
 #logoapenasumshow{
-  padding-left: 45%;
-  padding-left: 45%;
+
+  inset-block-start: auto ;
   height: 100px;
   
 }
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none; /* Remove as bolinhas da lista */
   padding-top: 0%;
   margin: 0%;
@@ -56,13 +56,22 @@ nav a:hover {
     background-color: #e0e0f55d;
     border: 2px solid #000000;
     border-radius: 8px;
+    justify-items: center;
 }
 
 .quadrado{
   display: flex;
+  justify-items: center; 
+  margin: 20px;
+  padding: 10px;
+  border: #000 solid 2px;
+  max-width: 50%;
+  
 }
  .ftpersonagem{
   width: 200px;
   height: 250px;
   margin: 15px;
+  background-color: #0000001e;
+  border: #000 solid 2px;
  }
