@@ -81,7 +81,11 @@ nav a:hover {
   margin: 15px;
   background-color: #0000001e;
   border: #000 solid 2px;
+  transition: transform 0.3s;
  }
+ #ftpersonagem img:hover {
+    transform: scale(1.07);
+}
 
 footer {
   width: 100%;
