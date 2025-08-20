@@ -52,8 +52,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #dddddd42; /* Cor de fundo ao passar o mouse */
-  color: #000; /* Cor do texto ao passar o mouse */
+  background-color: #dddddd42; 
+  color: #000; 
 }
 
 .conteudo {
@@ -99,7 +99,7 @@ footer {
   border-radius: 8px;
 
   display: flex;                  
-  justify-content: space-between; 
+  justify-content: ; 
   align-items: center;            
   padding: 10px 20px;
 }
