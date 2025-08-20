@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="formulario">
+      <h2 class="titulo">Cadastro</h2>
+      <hr>
+
+      <form action="" method="post">
+        <div>
+          <label for="nome">Nome Completo:</label>
+          <input type="text" name="nome" id="nome" placeholder="Pedro Santos Rocha" class="campos" required>
+        </div>
+
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" placeholder="PedroSantos01@gmail.com" class="campos" required>
+        </div>
+
+        <div>
+          <label for="senha">Senha:</label>
+          <input type="password" name="senha" id="senha" class="campos" required>
+        </div>
+
+        <div>
+          <label for="nascimento">Data de nascimento:</label>
+          <input type="date" name="nascimento" id="nascimento" class="campos">
+        </div>
+
+        <div>
+          <label for="genero">Gênero:</label>
+          <select id="genero" name="genero" class="campos">
+            <option value="">Selecione seu gênero</option>
+            <option value="homem">Homem</option>
+            <option value="mulher">Mulher</option>
+            <option value="não-binário">Não-binário</option>
+            <option value="apache-helicóptero-de-combate">Apache helicóptero de combate</option>
+            <option value="gato-em-forma-humana">Gato em forma humana</option>
+            <option value="emoji-vivo">Emoji vivo</option>
+            <option value="mistério">Mistério (nem eu sei)</option>
+            <option value="personagem-de-anime">Personagem de anime</option>
+            <option value="energia-caótica">Energia caótica pura</option>
+            <option value="tiktoker-em-crise">Tiktoker em crise</option>
+            <option value="sanduíche-de-presunto">Sanduíche de presunto</option>
+            <option value="modo-dark">Modo dark ativado</option>
+            <option value="bug-do-sistema">Bug do sistema</option>
+            <option value="gênero-flutuante">Gênero flutuante (hoje é um, amanhã é outro)</option>
+            <option value="eu-só-quero-café">Eu só quero café</option>
+            <option value="erro-404">Erro 404: gênero não encontrado</option>
+            <option value="sou-de-peixes">Sou de Peixes e isso basta</option>
+            <option value="morador-do-acre">Morador do Acre</option>
+            <option value="npc">NPC (personagem não jogável)</option>
+            <option value="gênero-indefinido">Gênero indefinido até segunda ordem</option>
+            <option value="versão-beta">Versão beta em testes</option>
+            <option value="gênero-temporário">Gênero temporário, sujeito a alterações</option>
+            <option value="modo-anônimo">Modo anônimo ativado</option>
+            <option value="gênero-quantum">Gênero em estado quântico</option>
+            <option value="sou-apenas-um-conceito">Sou apenas um conceito</option>
+            <option value="gênero-offline">Gênero offline, tente novamente mais tarde</option>
+            <option value="gênero-aleatório">Gênero aleatório gerado pelo sistema</option>
+            <option value="sem-atualização">Sem atualização desde 2009</option>
+            <option value="gênero-observador">Gênero observador, não interfere</option>
+            <option value="gênero-plot-twist">Gênero plot twist</option>
+            <option value="outro">Outro (escreva o que quiser)</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="estado">Estado:</label>
+          <select name="estado" id="estado" class="campos">
+            <option value="">Selecione seu estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+
+        <hr>
+
+        <div>
+          <input type="checkbox" name="novidades" id="novidades">
+          <label for="novidades">Quero receber novidades por E-mail</label>
+        </div>
+
+        <br>
+        <input id="botaoEnviar" type="submit" value="Enviar" />
+      </form>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
