@@ -1,0 +1,90 @@
+/***************************************
+ * Estilos base                        *
+ ***************************************/
+body {
+  background: #feffa5;
+  font-family: sans-serif; 
+}
+
+main {
+  width: 80%;
+  margin: 0 auto 200px auto;
+}
+
+code {
+  background-color: lightgray;
+  padding: .2em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+a {
+  color: darkmagenta;
+  font-weight: 700;
+}
+
+.challenge {
+  margin-bottom: 100px;
+  border-bottom: 1px solid #000;
+}
+
+li {
+  line-height: 1.4em;
+}
+
+/***************************************
+ * Estilos do exercício                *
+ ***************************************/
+
+/* 
+ Seção de cartões 
+ <section>
+*/
+.courses {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Cartão Individual */
+.course {
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 10px 10px black;
+  background: #fff;
+  flex-grow: 0; /* Proporção de crescimento do card em relação ao espaço vazio */
+  flex-shrink: 0;
+  flex-basis: 25%;
+}
+
+.course-image {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.course-category {
+  background: yellow;
+  margin-top: 1em;
+  display: inline-block;
+  border-radius: 5px;
+  padding: .5em;
+}
+
+/* Media query */
+@media (max-width: 600px) {
+  .course {
+    background: pink;
+    flex-basis: 100%;
+  }
+}
+
+/* Media query */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .course {
+    background: green;
+    flex-basis: 36%;
+  }
+}

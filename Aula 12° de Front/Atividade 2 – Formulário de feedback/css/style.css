@@ -14,9 +14,9 @@ body {
 }
 
 .titulo {
-    display: flex;
-    justify-content: center;
-}
+  display: flex;
+  justify-content: center;
+}   
 
 .campos {
     width: 100%;
